@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// 引入图标组件
+import { Edit } from "@element-plus/icons-vue";
+</script>
 
 <template>
-  <h1>我是APP</h1>
-  <h2>我新增了一个标题</h2>
+  <div>
+    <el-button type="primary" size="default" :icon="Edit">Default</el-button>
+  </div>
 </template>
