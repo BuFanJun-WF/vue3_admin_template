@@ -32,7 +32,7 @@ function createUserList() {
 export default [
   // 用户登录接口
   {
-    url: "/api/user/login", //请求地址
+    url: "/dev-api/user/login", //请求地址
     method: "post", //请求方式
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     response: ({ body }) => {
@@ -53,7 +53,7 @@ export default [
   },
   // 获取用户信息
   {
-    url: "/api/user/info",
+    url: "/dev-api/user/info",
     method: "get",
     response: (request) => {
       //获取请求头携带token

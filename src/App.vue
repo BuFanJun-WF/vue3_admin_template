@@ -1,16 +1,25 @@
 <script setup lang="ts">
-// 引入图标组件
-import { Edit } from "@element-plus/icons-vue";
+import request from "@/utils/request";
+import { onMounted } from "vue";
+
+// 当组件挂载完毕测试发一个请求
+onMounted(() => {
+  request({
+    url: "/user/login",
+    method: "post",
+    data: {
+      username: "admin",
+      password: "111111",
+    },
+  }).then((res) => {
+    console.log(res);
+  });
+});
 </script>
 
 <template>
   <div>
-    <h1>test</h1>
-    <el-button type="primary" size="default" :icon="Edit">Default</el-button>
-    <!-- svg:图标外层容器节点 -->
-    <SvgIcon name="phone"></SvgIcon>
-    <Pagination></Pagination>
-    <el-button type="primary" size="default" :icon="Edit">Default</el-button>
+    <h1>测试axios二次封装</h1>
   </div>
 </template>
 
