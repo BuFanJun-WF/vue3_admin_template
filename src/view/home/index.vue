@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    <RouterView></RouterView>
+    <h1>一级路由展示</h1>
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style></style>

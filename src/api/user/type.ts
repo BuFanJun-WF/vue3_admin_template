@@ -18,7 +18,7 @@ export interface LoginResponseData extends ResponseData {
 }
 
 //定义获取用户信息返回数据类型
-export interface UserInfoReponseData extends ResponseData {
+export interface UserInfoResponseData extends ResponseData {
   data: {
     routes: string[];
     buttons: string[];

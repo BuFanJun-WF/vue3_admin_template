@@ -3,7 +3,7 @@ import request from "@/utils/request";
 import type {
   LoginFormData,
   LoginResponseData,
-  UserInfoReponseData,
+  UserInfoResponseData,
 } from "./type";
 // 统一管理接口
 //项目用户相关的请求地址
@@ -20,7 +20,7 @@ export const reqLogin = (data: LoginFormData) =>
 
 // 获取用户信息
 export const reqUserInfo = () =>
-  request.get<any, UserInfoReponseData>(API.USERINFO_URL);
+  request.get<any, UserInfoResponseData>(API.USERINFO_URL);
 
 // 退出登录
 export const reqLogout = () => request.post<any, any>(API.LOGOUT_URL);
